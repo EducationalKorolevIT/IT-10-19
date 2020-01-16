@@ -16,5 +16,5 @@ int main(){
         long long aa=a,cc=c;
         c=aa;a=cc;
     }
-    cout<<a<<" "<<b;
+    cout<<a+b;
 }
