@@ -3,18 +3,16 @@
 using namespace std;
 
 int main(){
-    long long a,b,c;
+    int a=0,b=0,c=0;
+    int sum;
     cin >> a >> b >> c;
     if(a>b){
-        long long aa=a,bb=b;
-        a=bb;b=aa;
+        if(b>c)sum=a+b;
+        else sum=a+c;
+    }else{
+        if(a>c)sum=b+c;
+        else sum=b+c;
     }
-    if(b>c){
-        long long bb=b,cc=c;
-        c=bb;b=cc;
-    }if(a<c){
-        long long aa=a,cc=c;
-        c=aa;a=cc;
-    }
-    cout<<a+b;
+
+    cout << sum;
 }
