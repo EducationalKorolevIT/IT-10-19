@@ -2,11 +2,12 @@
 #include<cmath>
 using namespace std;
 int main(){
-    float v = 0;
-    int n, i;
-    cin >> n >> v;
-    for(i = 1; n > 0; n++){
-        v = i * v;
+    float v = 1;
+    int n;
+    cin >> n;
+    for(int i = 1; i <= n; i++){
+        v = v*i;
     }
     cout << v;
 }
+
