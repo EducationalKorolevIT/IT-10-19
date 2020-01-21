@@ -3,11 +3,16 @@
 using namespace std;
 int main(){
     int n = 0, k = 0, i = 0, sum = 0;
+
     cin >> n;
-    while(i <= k){
+
+    while(sum <= n){
         k++;
         sum += k;
+        if(sum >= n){
+            cout << k << " ";
+            break;
+        }
     }
-    cout << k;
     return 0;
 }
