@@ -3,21 +3,19 @@
 using namespace std;
 int main(){
     int a, b, c, d;
-    cin >> a,b,c,d;
-    if(a == b)
-    {
-        if(a == c)
-        {
-          cout << "1";
-        }
-          else cout << "2";
-    }
+    cin >> a >> b >> c >> d;
 
-    else if(c == a)
-        {
-          cout << "3";
-        }
-          else cout << "4";
-    }
+   if(a == b && b == c)
+        cout << "4";
 
+   if(b == c && c == d)
+        cout << "1";
+
+   if(a == c && c == d)
+    cout << "2";
+
+    if(a == b && b == d)
+    cout << "3";
+
+}
 
